@@ -1,0 +1,246 @@
+/* Centrera hela sidan */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    min-height: 10vh;
+}
+
+/* Header-styling */
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Huvudmeny-länkar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    transition: transform 0.3s ease; /* Lägg till transition för att ge breath-effekten */
+}
+
+/* Breath-effekt på länkar */
+nav a:hover {
+    transform: scale(1.1); /* Skala upp texten vid hover */
+    color: #007BFF; /* Färgändring vid hover */
+}
+
+/* Main-styling */
+main {
+    flex: 1;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+/* Footer-styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover {
+    color: #007BFF;
+}
+
+/* Header bild (logotypen) */
+header img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Breath-effekt på logotypen vid hover */
+header img:hover {
+    transform: scale(1.1); /* Skala upp logotypen vid hover */
+}
+
+/* Body font */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        width: 90%;
+    }
+}
+
+/* Stil för knappar */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Bakgrundsfärg och textfärg */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    color: #007BFF;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Sociala medie-länkar i footer */
+footer a {
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+footer a:hover {
+    color: #007BFF;
+}
+
+footer .social-media-links a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+footer .social-media-links a:hover {
+    color: #007BFF;
+}
+
+footer .social-media-links a[href*="youtube"] {
+    color: #FF3B30;
+}
+
+footer .social-media-links a[href*="youtube"]:hover {
+    color: #FF6F61;
+}
+
+/* Tabbar och deras innehåll */
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Aktiva tabbar visas */
+.tab-content.active {
+    display: block;
+}
+
+/* Styling för navigeringslänkar i tabbarna */
+nav a.active {
+    font-weight: bold;
+    color: #007BFF;
+}
+    
+
+
+
+
+
+
+/* Aktiv tab stil */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Stil för aktiva länkar */
+nav a.active {
+    color: #007BFF; /* Färg på den aktiva tabben */
+    font-weight: bold;
+}
+
+
+
+
+    /* Standard ljus läge */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Mörkt läge */
+body.dark-mode {
+    background-color: #121212;  /* Mörk bakgrund */
+    color: #f4f4f4;  /* Ljus text */
+}
+/* Footer i mörkt läge */
+body.dark-mode footer {
+    background-color: #121212;  /* En mörk bakgrund i mörkt läge */
+    color: #f4f4f4;  /* Vit textfärg för all text i footern */
+}
+
+body.dark-mode footer a {
+    color: #f4f4f4;  /* Länkfärg för sociala länkar i footern */
+}
+
+body.dark-mode footer a:hover {
+    color: #007BFF;  /* Hover-färg för länkar */
+}
+
+/* Social media länkar i mörkt läge */
+body.dark-mode footer .social-media-links a {
+    color: #f4f4f4;  /* Gör sociala media-länkar vita */
+}
+
+body.dark-mode footer .social-media-links a:hover {
+    color: #007BFF;  /* Hover-färg för sociala media-länkar */
+}
+
+/* Copyright text i footer */
+body.dark-mode footer .copyright {
+    color: #f4f4f4;  /* Gör copyright-text vit */
+}
+
+
+#theme-toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+}
