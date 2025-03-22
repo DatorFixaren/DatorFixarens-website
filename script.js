@@ -30,7 +30,7 @@ function openTab(tabName) {
 
     // Uppdatera sidans titel
     const tabTitles = {
-        "hem": "DatorFixaren - Home",
+        "hem": "DatorFixaren - Hem",
         "service": "DatorFixaren - Service",
         "about": "DatorFixaren - Om mig",
         "contact": "DatorFixaren - Kontakta mig"
